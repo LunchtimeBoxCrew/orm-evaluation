@@ -19,7 +19,7 @@ const user = new User("LTBUser", "user@ltb.org");
 em.persistAndFlush(user);
 ```
 
-## Mikroorm
+### Mikroorm
 
 So sieht die User Entity in MikroORM aus:
 
@@ -53,7 +53,7 @@ export class User extends BaseEntity {
 }
 ```
 
-## Prisma
+### Prisma
 
 So sieht der User Entity in Prisma aus:
 
@@ -67,3 +67,18 @@ model User {
   friends User[]
 }
 ```
+
+## Installation / Test Yo Self
+
+1. `git clone https://github.com/jim-fx/orm-evaluation`
+2. `cd orm-evaluation`
+3. `cd prisma/mikroorm`
+4. `pnpm install`
+
+   (4.5) für mikroorm `pnpm create:schema`
+
+5. `pnpm start`
+
+## Tipps/Tricks
+
+Falls ihr VSCode benutzt installiert euch die [SQLite Extension](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite). Dann könnt ihr direkt in die Datenbank reingucken.
